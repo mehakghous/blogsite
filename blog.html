@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="h-screen">
+<div class="w-full h-full flex justify-center bg-gray-100">
+
+    <form onsubmit="addBlog(this)" action="javascript:void(0)" class=" w-full w-full lg:w-[1024px] flex flex-col bg-gray-100 p-10 items-center justify-between ">
+       
+        <span class="text-yellow-600 font-bold text-2xl uppercase ">
+
+         your blog's information
+        </span>
+        <label class="flex flex-col w-[400px]  p-5">
+       <span class="text-yellow-600 font-medium pb-3 ">
+           Blog's Title:
+    </span>
+        <input required name='title' placeholder='enter your blogs title' class="rounded-lg p-3 border-2 outline-none border-grey-200" type="text">
+       </label>
+       <label class="flex flex-col  w-[400px]  p-5">
+        <span class="text-yellow-600 font-medium pb-3 ">
+            Blog's Description:
+        </span>
+        <textarea required name="description" id="" cols="30" placeholder="enter your blog's description" class="resize-none outline-none rounded-lg p-3 border-2  border-grey-200" rows="10"></textarea>
+       </label>
+        <label class="flex flex-col w-[400px] p-5">
+            <span class="text-yellow-600 font-medium pb-3 ">
+                Publish Date:
+            </span>
+            <input required type="date" class="border-2 outline-none   rounded-lg p-3 border-grey-200"name="date" id="">
+        </label>
+        <label class="flex flex-col w-[400px] p-5 ">
+            <span class="text-yellow-600 font-medium pb-3 ">
+                Image URL:
+            </span>
+            <input required type="url" class="border-2  border-grey-200 outline-none rounded-lg p-3" placeholder='Paste Image URL' name="image" id="">
+        </label>
+        <button required class="bg-yellow-600 p-5 rounded-lg text-gray-100  w-[360px] outline-none">submit</button>
+    </form>
+</div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
